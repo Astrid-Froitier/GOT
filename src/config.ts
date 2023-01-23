@@ -10,3 +10,5 @@ const config = {
 }[_env];
 
 export default config;
+
+export const BASE_URL = 'https://www.anapioficeandfire.com/api';
