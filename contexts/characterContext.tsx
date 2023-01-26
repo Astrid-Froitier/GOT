@@ -1,19 +1,21 @@
 import { createContext } from 'react';
 
-import ICharacters from '../interfaces/ICharacters';
+import { ICharacter } from '../interfaces/ICharacter';
 
-type CharacterContent = {
-  character: ICharacters;
-  setCharacter: React.Dispatch<React.SetStateAction<ICharacters>>;
+export type CharacterContent = {
+  character: ICharacter;
+  setCharacter: React.Dispatch<React.SetStateAction<ICharacter>>;
 };
 
 const CharacterContext = createContext<CharacterContent>({
   character: {
+    url: '',
     name: '',
     gender: '',
     culture: '',
     born: '',
     died: '',
+    house: [],
     titles: [],
     aliases: [],
     father: '',
