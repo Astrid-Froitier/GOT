@@ -18,12 +18,11 @@ function CharacterCard({ character }: Iprops): JSX.Element {
         <Link href={getOneCharacter()} passHref>
           <a href={'toto'}>
             <Fragment>
-              <h1 className="flex justify-center text-2xl italic">{character.name}</h1>
+              <h1 className="flex justify-center pb-3 text-2xl italic">{character.name}</h1>
               <p>Gender : {character.gender}</p>
               <p>Culture : {character.culture}</p>
               <p>Title : {character.titles[0]}</p>
               <p>Aliase : {character.aliases[0]}</p>
-              <p>House : {character.house}</p>
             </Fragment>
           </a>
         </Link>
