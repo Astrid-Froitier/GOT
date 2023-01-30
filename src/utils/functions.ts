@@ -3,6 +3,10 @@ import axios from 'axios';
 import { ICharacter } from '../../interfaces/ICharacter';
 import { Base_Characters } from './constants';
 
+export const getId = (character: ICharacter) => {
+  const id = character.url.split('/').pop() ?? null;
+  return id;
+};
 // const getHouse = async (allegiances: string[]) => {
 //   if (allegiances.length > 0) {
 //     const house = await axios.get(allegiances[0]);

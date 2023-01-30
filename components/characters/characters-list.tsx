@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 
-import { Iprops } from '../../interfaces/ICharacter';
+import { IProps } from '../../interfaces/ICharacter';
 import CharacterCard from './character-card';
 
-function CharacterList({ characters }: Iprops): JSX.Element {
+function CharacterList({ characters }: IProps): JSX.Element {
   return (
     <Fragment>
       <div className="grid items-center h-full grid-cols-3 gap-4 pb-4 mx-4">

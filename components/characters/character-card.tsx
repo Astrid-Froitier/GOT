@@ -2,13 +2,13 @@ import { Fragment } from 'react';
 import Link from 'next/link';
 
 import { ICharacter } from '../../././interfaces/ICharacter';
-import { getId } from '../../src/utils/constants';
+import { getId } from '../../src/utils/functions';
 
 type Iprops = { character: ICharacter };
 
 function CharacterCard({ character }: Iprops): JSX.Element {
   function getOneCharacter() {
-    const fullPath = `/characters/${getId(character.url)}`;
+    const fullPath = `/characters/${getId(character)}`;
     return fullPath;
   }
 
@@ -16,7 +16,7 @@ function CharacterCard({ character }: Iprops): JSX.Element {
     <div className="h-48 py-3 pl-3 border border-white solid rounded-3xl">
       <Fragment>
         <Link href={getOneCharacter()} passHref>
-          <a href={'toto'}>
+          <a href={'Super Johanna'}>
             <Fragment>
               <h1 className="flex justify-center pb-3 text-2xl italic">{character.name}</h1>
               <p>Gender : {character.gender}</p>
