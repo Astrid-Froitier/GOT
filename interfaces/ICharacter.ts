@@ -12,6 +12,7 @@ export interface ICharacter {
   mother: string;
   spouse: string;
   allegiances: string[];
+  playedBy: string;
 }
 
-export type Iprops = { characters: ICharacter[] };
+export type IProps = { characters: ICharacter[] };

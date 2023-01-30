@@ -22,6 +22,7 @@ const CharacterContext = createContext<CharacterContent>({
     mother: '',
     spouse: '',
     allegiances: [],
+    playedBy: '',
   },
   setCharacter: () => {
     ('');
